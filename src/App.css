@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0 10px 0;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #f8fafc;
+  background: linear-gradient(135deg, #818cf8, #38bdf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.status-message {
+  padding: 60px;
+  text-align: center;
+  font-size: 18px;
+  color: #e2e8f0;
+}
+
+.status-message.error {
+  color: #f87171;
+}
+
+.category-selector {
+  margin: 24px 0;
+  text-align: center;
+}
+
+.category-selector select {
+  padding: 8px 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #e2e8f0;
+  margin-left: 8px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.metric-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.metric-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.metric-value {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: #f8fafc;
+}
+
+.metric-sub {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.chart-section, .table-section {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #334155;
+}
+
+th {
+  color: #94a3b8;
+  font-size: 13px;
+  text-transform: uppercase;
+}
