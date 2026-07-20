@@ -32,9 +32,6 @@ npm run dev
 
 3. Open `http://localhost:5173`
 
-## Screenshot
-
-*(add a screenshot of your dashboard here once deployed)*
 
 ## Author
 
