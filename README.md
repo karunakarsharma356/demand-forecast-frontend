@@ -1,16 +1,41 @@
-# React + Vite
+# AI Demand Forecasting & Inventory Optimization — Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React frontend for visualizing AI-driven demand forecasts and inventory optimization
+recommendations, built on top of a FastAPI + XGBoost/Prophet backend.
 
-Currently, two official plugins are available:
+See the backend repo for the full ML pipeline, methodology, and results:
+[demand-forecast-backend](https://github.com/karunakarsharma356/demand-forecast-backend)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Category selector across 15 top-performing product categories
+- Live next-day demand forecast (XGBoost model)
+- Inventory metrics: safety stock, reorder point, Economic Order Quantity (EOQ)
+- Comparative bar chart of average daily demand vs. safety stock across categories
+- Full inventory plan table for all categories
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the Oxlint configuration
+- React (Vite)
+- Recharts (data visualization)
+- Axios (API calls)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Running locally
+
+1. Make sure the backend API is running (see backend repo README) at `http://127.0.0.1:8000`
+2. Install dependencies and start the dev server:
+
+```bash
+npm install
+npm run dev
+```
+
+3. Open `http://localhost:5173`
+
+## Screenshot
+
+*(add a screenshot of your dashboard here once deployed)*
+
+## Author
+
+Karunakar Sharma — final-year B.Tech CSE student, NIET Noida
